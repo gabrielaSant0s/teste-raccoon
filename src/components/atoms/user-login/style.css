@@ -9,11 +9,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .title{
     color: #002050;
     font-size: 2.5em;
+    margin-top: -5%;
 }
 
 .containerLabels{
@@ -47,4 +49,24 @@
 
 .buttonLoginUser:hover{
     background-color: #002050;
+}
+
+@media (max-width:1024px) {
+    .title{
+        font-size: 1.5em;
+        margin-bottom: 5%;
+    }
+
+    .loginContainerComponent{
+        width: 80%;
+    }
+
+    .input{
+        width: 50vw;
+    }
+
+    .buttonLoginUser{
+        width: 50.8vw;
+    }
+    
 }
