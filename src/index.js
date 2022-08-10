@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MenuBar from './components/atoms/menu-bar';
+// import MenuBar from './components/atoms/menu-bar';
+import ProductCard from './components/atoms/product-card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <MenuBar/>
+    {/* <MenuBar/> */}
+    <ProductCard/>
   </React.StrictMode>
 );
 
