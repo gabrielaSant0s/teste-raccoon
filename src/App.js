@@ -35,7 +35,6 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/produtos" element={<Private><Product/></Private>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/cadastro" element={<Registration/>}/>
       </Routes>
       </AuthProvider>
     </Router>
