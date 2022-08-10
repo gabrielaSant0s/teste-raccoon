@@ -1,13 +1,20 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
+
+import { AuthContext } from "../../../contexts/auth";
+
 import "./style.css"
 
 const UserLogin = () => {
+    const { authenticated, login } = useContext(AuthContext)
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
     const handleSubmit = (e) =>{
         e.preventDefault()
         console.log("submit", {email, password});
+
+        login(email, password)
     }
     return (
         <div className="loginContainerComponent">
@@ -30,7 +37,6 @@ const UserLogin = () => {
                         type="password" 
                         id="pass" 
                         name="password"
-                        minlength="8"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)} 
                         required></input>
