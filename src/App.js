@@ -8,7 +8,6 @@ import {
 import Home from "./pages/home"
 import Product from "./pages/product"
 import Login from "./pages/login"
-import Registration from "./pages/registration"
 
 import {AuthProvider, AuthContext} from './contexts/auth'
 
