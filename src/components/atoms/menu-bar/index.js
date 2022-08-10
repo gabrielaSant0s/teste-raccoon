@@ -12,6 +12,7 @@ const MenuBar = ()=> {
                     <img src={logo} className='logo'/>
                 </a>
                 <nav className={`spanButtons ${isOpen && "open"}`}>
+                    <a className='button' href='/'>Home</a>
                     <a className='button' href='#'>Produtos</a>
                     <a className='button' href='#'>Github</a>
                     <a className='buttonLogin' href='#'>Login</a>
