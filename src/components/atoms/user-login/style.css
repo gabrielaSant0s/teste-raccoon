@@ -1,0 +1,50 @@
+.loginContainerComponent{
+    background-color:  #e6e6e6;
+    border-radius: 10px;
+    width: 40vw;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    color: #002050;
+    font-size: 2.5em;
+}
+
+.containerLabels{
+    display: flex;
+    flex-direction: column;
+}
+
+.titleLabel{
+    color: #aaaaaa;
+    margin-bottom: 1vh;
+    font-size: 1.2em;
+}
+
+.input{
+   width: 30vw;
+   height: 6vh;
+   border: none;
+   margin-bottom: 3vh;
+}
+
+.buttonLoginUser{
+    width: 30.26vw;
+    height: 6vh;
+    border: none;
+    cursor: pointer;
+    background-color: #00a4ef;
+    color: white;
+    margin-top: 4vh;
+    font-size: 1.2em;
+}
+
+.buttonLoginUser:hover{
+    background-color: #002050;
+}
