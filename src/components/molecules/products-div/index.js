@@ -4,6 +4,7 @@ import apiProducts from "../../../services/api"
 
 import ProductCard from "../../atoms/product-card";
 
+
 const ProductsDiv = () => {
     const [dataProducts,setDataProducts] = useState([]);
     const [itensPerPage, setItensPerPage] = useState(6)
@@ -25,13 +26,29 @@ const ProductsDiv = () => {
     for (let index = 0; index < pages; index++) {
         arrayNumbers.push(index)   
     }
-    
+
+    const colors = (i) =>{
+        switch(i){
+            case 0:
+                return "#0072c6"
+            case 1:
+                return "#2c5898"
+            case 2:
+                return "#207245"
+            case 3:
+                return "#cb4a32" 
+            case 4:
+                return "#733781" 
+            case 5:
+                return "#5558af"     
+        }
+    }
 
     return (
         <>
         <div className="containerProducts">
-           {currentItens?.map((item) => (
-                <div className="cards"><ProductCard title={item["title"]} description={item["description"]}/></div>
+           {currentItens?.map((item, index) => (
+                <div className="cards"><ProductCard title={item["title"]} description={item["description"]} color={colors(index)}/></div>
             ))}
         </div>
         <div className="containerPagination">
