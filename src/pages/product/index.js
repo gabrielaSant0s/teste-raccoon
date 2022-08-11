@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React from "react";
 import MenuBar from "../../components/atoms/menu-bar/index"
 import ProductsDiv from "../../components/molecules/products-div/index"
 

@@ -11,6 +11,21 @@
     margin-bottom: 3%;
 }
 
+.pagination{
+    padding: 1%;
+    color: aliceblue;
+    background-color:rgb(123, 177, 224);
+    border: none;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.containerPagination{
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width:700px){
     .containerProducts{
         margin-left: 15%;
