@@ -1,0 +1,6 @@
+.backgroundHome{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../components/images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

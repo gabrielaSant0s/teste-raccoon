@@ -1,0 +1,33 @@
+.principalContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+.titleCallToAction{
+    color: white;
+    font-size: 3.1em;
+}
+
+.descriptionCallToAction{
+    color: aliceblue;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+}
+
+.buttonCallToAction{
+    border: none;
+    background-color: #00a4ef;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+    padding-right:3%;
+    padding-left:3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.buttonCallToAction:hover{
+    background-color: #002050;
+}
