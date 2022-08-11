@@ -14,7 +14,7 @@ const MenuBar = ()=> {
                 <nav className={`spanButtons ${isOpen && "open"}`}>
                     <a className='button' href='/'>Home</a>
                     <a className='button' href='/produtos'>Produtos</a>
-                    <a className='button' href='https://github.com/gabrielaSant0s'>Github</a>
+                    <a className='button' target="_blank" href='https://github.com/gabrielaSant0s'>Github</a>
                     <a className='buttonLogin' href='/login'>Login</a>
                 </nav>
             </div>
