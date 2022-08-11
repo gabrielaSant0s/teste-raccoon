@@ -1,5 +1,8 @@
 import React, {useState, useContext} from "react";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { AuthContext } from "../../../contexts/auth";
 
 import "./style.css"
@@ -16,6 +19,10 @@ const UserLogin = () => {
 
         login(email, password)
     }
+
+    
+    const notify = () => toast.error("Usuário e senha errados !!")
+    
     return (
         <div className="loginContainerComponent">
             <h1 className="title">Acessar o sistema</h1>
@@ -41,7 +48,8 @@ const UserLogin = () => {
                         onChange={(e) => setPassword(e.target.value)} 
                         required></input>
                 </div>
-                <button className="buttonLoginUser" type="submit" value="Entrar">Entrar</button>
+                <button className="buttonLoginUser" type="submit" value="Entrar" onClick={!authenticated?notify:null}>Entrar</button>
+                <ToastContainer position="top-right" />
             </form>
 
         </div>
