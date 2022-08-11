@@ -31,3 +31,21 @@
 .buttonCallToAction:hover{
     background-color: #002050;
 }
+
+@media (max-width:700px){
+    .titleCallToAction{
+        font-size: 2em;
+    }
+
+    .descriptionCallToAction{
+        font-size: 1.3em; 
+        margin-bottom: 20%;
+    }
+
+    .buttonCallToAction{
+        padding-right:5%;
+        padding-left:5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
