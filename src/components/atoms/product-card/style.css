@@ -1,12 +1,12 @@
-
 .containerCard{
     background-color: #2571b7;
     width: 100%;
-    height: 25%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
 }
 
 .icon{
@@ -19,7 +19,7 @@
     margin-left: 5%;
 }
 
-.title{
+.titleProduct{
     font-size: 1.5em;
     color: white;
 }
@@ -29,5 +29,26 @@
     color: white;
     margin-top: 2%;
     margin-right: 5%;
+}
+
+@media (max-width:700px){
+    .containerCard{
+        align-items: center;
+    }
+    .icon{
+        width: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .titleProduct{
+        font-size: 0.9em;
+        width: 90%;
+    }
+
+    .description{
+        font-size: 0.6em;
+        width: 90%;
+    }
 }
 

@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import MenuBar from "../../components/atoms/menu-bar/index"
-// import ProductCard from "../../components/atoms/product-card";
+import ProductCard from "../../components/atoms/product-card";
 import ProductsDiv from "../../components/molecules/products-div/index"
 
 import {AuthContex, AuthContext} from "../../contexts/auth"

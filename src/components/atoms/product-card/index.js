@@ -16,7 +16,7 @@ const ProductCard = ({
                 <img src={target}/>
             </span>
             <div>
-                <p className='title'>{title}</p>
+                <p className='titleProduct'>{title}</p>
                 <p className='description'>{description}</p>
             </div>  
         </div>

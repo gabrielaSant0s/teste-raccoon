@@ -1,0 +1,20 @@
+.containerProducts{
+    width: 70vw;
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 40vw 40vw; 
+    grid-column-gap: 5%;
+}
+
+.cards{
+    height: 22vh;
+    margin-bottom: 3%;
+}
+
+@media (max-width:700px){
+    .containerProducts{
+        margin-left: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+}

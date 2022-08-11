@@ -13,23 +13,14 @@ const ProductsDiv = () => {
     })
     },[])
 
-    // console.log(dataProducts["products"]);
-
-    const getDataProducts = () => {
-        return dataProducts["products"].map(item => 
-        <ProductCard 
-        title={item["title"]} 
-        description={item["description"]}/>) 
-    }
-
-    
 
     return (
-        <div className="ContainerProducts">
-            {getDataProducts()}
+        <div className="containerProducts">
+           {dataProducts["products"]?.map((item) => (
+                <div className="cards"><ProductCard title={item["title"]} description={item["description"]}/></div>
+            ))}
         </div>
     )
 }
 
 export default ProductsDiv
-
