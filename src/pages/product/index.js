@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import MenuBar from "../../components/atoms/menu-bar/index"
-import ProductCard from "../../components/atoms/product-card";
+// import ProductCard from "../../components/atoms/product-card";
+import ProductsDiv from "../../components/molecules/products-div/index"
 
 import {AuthContex, AuthContext} from "../../contexts/auth"
 
@@ -14,8 +15,9 @@ const Product = () => {
         <div>
             <MenuBar/>
             <h1>Página Produto</h1>
-            <ProductCard/>
+            {/* <ProductCard/> */}
             <button onClick={handleLogout}>logout</button>
+            <ProductsDiv/>
         </div>
     )
 }
