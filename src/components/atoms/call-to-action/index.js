@@ -7,7 +7,7 @@ const CallToAction = () =>{
         <div className="principalContainer">
             <h1 className="titleCallToAction">Lorem ipsum</h1>
             <p className="descriptionCallToAction">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-            <a href='/login' className="buttonCallToAction">Lorem Ipsum</a>
+            <a href='/produtos' className="buttonCallToAction">Lorem Ipsum</a>
         </div>
     )
 }
