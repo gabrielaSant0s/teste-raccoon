@@ -44,6 +44,7 @@ export const AuthProvider = ({children}) =>{
             setUser(loggedUser)
             navigate("/produtos")
         }   
+        
     }
 
     const logout = () => {
